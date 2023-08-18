@@ -2,6 +2,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap-theme.min.css'
 import { Navbar } from './components/Navbar/Navbar'
 import { Contact } from './components/Contact/Contact'
+import { Routes, Route} from "react-router-dom"
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
         </h1>
         <p>Lorem ipsum dolor sit amet. At officiis optio ut harum repellat sit quia officia. In voluptatem laudantium qui expedita neque aut blanditiis iusto. Est sint illo qui dolorem molestias qui dolorem dolores vel totam repudiandae. Read more on My CV.</p>
       </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       {/* <div className='projects'>
         <h1>
           My Projects

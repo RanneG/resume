@@ -4,7 +4,7 @@ export const Navbar = () => {
         <nav className='navbar'>
             <div className='topnav'>
                 <ul className="navbar-nav">
-                    <li className="nav-item"><a href='' className='left'>Home</a></li>
+                    <li className="nav-item"><a href='/' className='left'>Home</a></li>
                     <li className="nav-item"><a href='' className='left'>About Me</a></li>
                     <li className="nav-item"><a href='' className='left'>My Projects</a></li>
                 </ul>
