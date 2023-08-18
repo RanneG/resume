@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap-theme.min.css'
 import { Navbar } from './components/Navbar/Navbar'
 import { Contact } from './components/Contact/Contact'
 import { Routes, Route} from "react-router-dom"
+import { Home } from './routes/home';
 
 function App() {
   return (
