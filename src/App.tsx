@@ -8,6 +8,17 @@ import { Home } from './routes/home';
 function App() {
   return (
     <>
+      <script type="module">
+        import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+        RefreshRuntime.injectIntoGlobalHook(window)
+        window.$RefreshReg$ = () = {}
+        window.$RefreshSig$ = () = (type) = type
+        window.__vite_plugin_react_preamble_installed__ = true
+      </script>
+      <script type="module" src="http://localhost:5173/@vite/client"></script>
+      <script type="module" src="http://localhost:5173/main.tsx"></script>
+      <link rel="stylesheet" href="/assets/{{ manifest['main.tsx'].css }}" />
+      <script type="module" src="/assets/{{ manifest['main.tsx'].file }}"></script>
       <Navbar />
       <div className='home'>
         <h1>
